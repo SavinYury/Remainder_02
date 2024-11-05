@@ -62,6 +62,8 @@ label.pack(pady=10)
 set_button = Button(text="Установить напоминание", command=set)
 set_button.pack(pady=10)
 
+### Создаем кнопку откючения
+
 check()
 
 window.mainloop()
