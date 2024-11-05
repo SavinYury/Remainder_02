@@ -24,6 +24,7 @@ def set():
             print(dt) # Контрольный вывод информации когда сработает напоминание
             t = dt.timestamp() # В переменную положим текущую временную компьютерную метку
             print(t)
+            label.config(text=f"Напоминание на {hour:02}:{minute:02}")
         except Exception as e:
             mb.showerror(title="Ошибка", message=f"Произошла ошибка {e}") # При вводе значений не в режиме часов минут обрабатываем ошибку
 
@@ -76,7 +77,7 @@ set_button.pack(pady=10)
 
 ### Создаем кнопку отключения
 stop_button = Button(text="Остановить музыку", command=stop_music)
-stop_button.pack(pade=10)
+stop_button.pack(pady=10)
 
 check()
 
